@@ -69,6 +69,10 @@ npm install
 npm run start
 ```
 
+## Sources
+
+Llama image credit: https://pixels.com/featured/funny-llama-with-santa-hat-cute-christmas-hat-llama-eq-designs.html?product=greeting-card
+
 ## Resources
 
 Check out the relevant resources used in this project:
