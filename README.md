@@ -73,6 +73,8 @@ npm run start
 
 Llama image credit: https://pixels.com/featured/funny-llama-with-santa-hat-cute-christmas-hat-llama-eq-designs.html?product=greeting-card
 
+Snowball spinner credit: https://www.cssscript.com/animated-snowball-loading-spinner/#google_vignette
+
 ## Resources
 
 Check out the relevant resources used in this project:

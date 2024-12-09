@@ -5,10 +5,10 @@ import Image from "next/image";
 
 import { useCompletion } from 'ai/react';
 import { useState } from 'react';
-//import Spinner from '../components/Spinner';
+import Spinner from './components/Spinner';
 
 export default function Chat() {
-  const { completion, complete, handleSubmit } = useCompletion();
+  const { completion, complete, handleSubmit, isLoading, error } = useCompletion();
 
   const [subject, setSubject] = useState('');
   const [songTitle, setSongTitle] = useState('');
@@ -58,6 +58,25 @@ export default function Chat() {
             className="holly holly__start"
             src={holly}
             alt="" />
+
+          {isLoading && (
+            <div className="spinner__container">
+              <Spinner />
+              <button id="stop__button" type="button" onClick={() => stop()}>
+                Stop
+              </button>
+            </div>
+          )}
+
+          {error && (
+            <>
+              <div className="error__container">The elves are busy wrapping presents. Please try again later!</div>
+              <button id="retry__button" type="button" onClick={() => reload()}>
+                Retry
+              </button>
+            </>
+          )}
+
           <p id="song-response">
             {completion}
           </p>
