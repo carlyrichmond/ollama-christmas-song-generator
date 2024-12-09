@@ -73,8 +73,8 @@ npm run start
 
 Check out the relevant resources used in this project:
 
-1. [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
-2. [Elasticsearch JavaScript client](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)
-3. [ChatGPT and Elasticsearch: OpenAI meets private data | Elasticsearch Labs](https://www.elastic.co/search-labs/chatgpt-elasticsearch-openai-meets-private-data)
-4. [OpenAI Chat Completion API](https://platform.openai.com/docs/api-reference/chat/create)
-5. [Express](https://expressjs.com/)
+1. [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) and the [Elasticsearch JavaScript client](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)
+2. [Langchain JS](https://js.langchain.com/docs/introduction/)
+3. [Ollama](https://ollama.com/)
+4. [AI by Vercel SDK, including the UI SDK](https://sdk.vercel.ai/)
+5. [React](https://react.dev/), specifically [Next.js](https://nextjs.org/)
