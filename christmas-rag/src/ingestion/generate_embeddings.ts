@@ -14,7 +14,7 @@ import { OllamaEmbeddings } from "@langchain/ollama";
 
 import { Client, type ClientOptions } from "@elastic/elasticsearch";
 
-import { lyricsUrls } from "@/app/lib/lyrics-urls";
+import { lyricsUrls } from "@/ingestion/lyrics-urls";
 
 // Initialize Ollama embeddings
 const ollamaEmbeddings = new OllamaEmbeddings({
