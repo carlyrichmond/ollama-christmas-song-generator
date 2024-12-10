@@ -76,6 +76,10 @@ export async function getLyricsFromUserPrompt(
   userPrompt: string
 ): Promise<ReadableStream> {
   const promptParts = userPrompt.split("Use the provided lyrics from the song");
+
+  console.log(`User criteria: ${promptParts[0]}`);
+  console.log(`Song title: ${promptParts[1]}`);
+
   const userCriteria = promptParts[0];
   const songTitle = promptParts[1];
   
@@ -89,7 +93,7 @@ export async function getLyricsFromUserPrompt(
   });
 
   const stream = await customRagChain.stream({
-    question: userPrompt,
+    question: prompt,
     userCriteria,
     context
   });
